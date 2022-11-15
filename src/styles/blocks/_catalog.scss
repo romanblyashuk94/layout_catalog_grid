@@ -1,12 +1,10 @@
 .catalog {
-  max-width: 944px;
-  margin: 0 auto;
+  display: grid;
+  gap: 48px;
+  justify-content: center;
 
   @media (min-width: 488px) {
-    display: grid;
     grid-template-columns: repeat(2, $cardWidth);
-    gap: 48px;
-    justify-content: center;
   }
 
   @media (min-width: 768px) {
@@ -25,15 +23,5 @@
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 0 auto 48px;
-
-    &:last-child {
-      margin: 0 auto;
-    }
-
-    @media (min-width: 488px) {
-      margin: 0 auto;
-    }
   }
-
 }
